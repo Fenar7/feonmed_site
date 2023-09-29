@@ -14,6 +14,26 @@ p {
   padding: 0 100px;
 }
 
+.margin-top {
+  margin-top: 4.6875rem;
+}
+
+.margin-bottom {
+  margin-bottom: 4.6875rem;
+}
+
+.padding-bottom {
+  padding-bottom: 4.6875rem;
+}
+
+.padding-top {
+  padding-top: 4.6875rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 .header-main {
   background: #FFF;
   position: relative;
@@ -322,4 +342,85 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 3.125rem 0rem 0rem 3.125rem;
+}
+
+.categories .text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.categories .text-section h1 {
+  display: block;
+  color: #4A2960;
+  font-family: inherit;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.categories .text-section p {
+  display: block;
+  color: #777777;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.categories-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.2rem;
+}
+.categories-cards .card {
+  width: 15.625rem;
+  height: 15.625rem;
+  border-radius: 0.625rem;
+  background: #FFF;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.categories-cards .card img {
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+.categories-cards .card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categories-cards .card .content h3 {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  color: #4A2960;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.categories-cards .card .content p {
+  color: #777777;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0.625rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+.categories-cards .card .content a {
+  color: #FE5D14;
+  text-decoration: none;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */
