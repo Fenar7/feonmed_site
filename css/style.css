@@ -16,14 +16,22 @@ p {
 
 .top-header {
   height: 6.3125em;
-  background-color: red;
+  background-color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+.top-header .logo-img {
+  margin-left: -1rem;
+  margin-right: 3.5rem;
 }
 
 .bottom-header {
   height: 3.125em;
   background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .support-info {
@@ -74,4 +82,113 @@ p {
   width: 1.24769rem;
   height: 1.25rem;
   flex-shrink: 0;
+}
+
+.search-box {
+  border-radius: 0.625rem;
+  border: 1px solid #DEDEDE;
+  display: inline-flex;
+  height: 3rem;
+  max-width: 17rem;
+  margin-left: 5rem;
+  padding-left: 1rem;
+}
+.search-box form {
+  display: flex;
+}
+.search-box .search-text-box {
+  color: #686868;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+  height: 100%;
+  max-width: 17rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.search-box button {
+  display: inline-block;
+  font: inherit;
+  border: none;
+  outline: none;
+  border-radius: 0 0.625rem 0.625rem 0;
+  display: flex;
+  height: 3rem;
+  padding: 1rem 1.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: #FE5D14;
+  color: #fff;
+}
+
+.cart {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7.5625rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  border: 1px solid rgba(222, 222, 222, 0);
+  background: rgba(254, 93, 20, 0.2);
+}
+.cart .cart-icon {
+  position: relative;
+  margin-left: 0.31rem;
+}
+.cart .cart-no {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  border-radius: 50%;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  flex-shrink: 0;
+  background-color: #FE5D14;
+}
+.cart .cart-no p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.cart .cart-total {
+  color: #686868;
+  margin-right: 0.63rem;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-items: flex-end;
+}
+.cart .line {
+  background-color: #FE5D14;
+  width: 2rem;
+  height: 0.1rem;
+  transform: rotate(90deg);
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar li {
+  display: inline;
+}
+.navbar li a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
