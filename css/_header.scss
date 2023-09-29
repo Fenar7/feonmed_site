@@ -1,0 +1,64 @@
+.top-header{
+    height: 6.3125em;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+.bottom-header{
+    height: 3.125em;
+    background-color: yellow;
+}
+.support-info{
+    display: flex;
+    gap: 1.25rem;
+    flex-grow: 0;
+    .support-card-call{
+        display: flex;
+        gap: 0.69rem;
+        flex-shrink: 0;
+        .text{
+            display: flex;
+            width: 8.2rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0.3125rem;
+
+
+            .text-header{
+                font-family: inherit;
+                color: $accent-color;
+                font-size: 0.75rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .text-sub{
+                color: #686868;
+                font-family: inherit;
+                font-size: 0.75rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+
+        .call-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.3125rem;
+            height: 2.3125rem;
+            border-radius: 50%;
+            flex-shrink: 0;
+            background-color: $light-grey;
+
+            img{
+                width: 1.24769rem;
+                height: 1.25rem;
+                flex-shrink: 0;
+            }
+        }
+    }
+}
