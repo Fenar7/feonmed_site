@@ -250,4 +250,76 @@ p {
 }
 .register-login:hover svg path {
   stroke: #FE5D14;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  height: 42rem;
+  background-color: #4A2960;
+}
+.hero-section .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4A2960;
+  background-image: url("/images/bg/violet-icon-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section .hero-text .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 33.5rem;
+  height: 27.0625rem;
+  flex-shrink: 0;
+}
+.hero-section .hero-text .content h3 {
+  margin: 0;
+  color: #FE5D14;
+  font-family: inherit;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hero-section .hero-text .content h1 {
+  margin: 0;
+  margin-top: -40px;
+  color: #FFF;
+  font-family: inherit;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hero-section .hero-text .content h5 {
+  margin: 0;
+  color: #FFF;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hero-section .hero-text .content button {
+  border: none;
+  outline: none;
+  background-color: #FE5D14;
+  max-width: 8.5rem;
+  color: white;
+  font-family: inherit;
+  display: inline-flex;
+  padding: 0.875rem 1.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+}
+.hero-section .hero-img {
+  background-image: url("/images/hero_img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3.125rem 0rem 0rem 3.125rem;
 }/*# sourceMappingURL=style.css.map */
