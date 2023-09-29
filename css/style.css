@@ -423,4 +423,67 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.about-us-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 50rem;
+  background-color: #fff;
+}
+.about-us-section .about-us-text {
+  background-image: url("/images/bg/about-us.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-section .about-us-text .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  height: 29.5rem;
+}
+.about-us-section .about-us-text .content h3 {
+  color: #FE5D14;
+  font-family: inherit;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about-us-section .about-us-text .content h1 {
+  color: #4A2960;
+  font-family: inherit;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about-us-section .about-us-text .content p {
+  color: #4A2960;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about-us-section .about-us-text .content button {
+  border: none;
+  outline: none;
+  background-color: #FE5D14;
+  max-width: 8.5rem;
+  color: white;
+  font-family: inherit;
+  display: inline-flex;
+  padding: 0.875rem 1.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+}
+.about-us-section .image-cards {
+  background-image: url("/images/bg/about-us.svg");
+}
+.about-us-section .image-cards img {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

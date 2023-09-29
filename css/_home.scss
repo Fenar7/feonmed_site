@@ -167,3 +167,77 @@
 
 // category section end
 
+// about us section start
+.about-us-section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 50rem;
+    background-color: #fff;
+    
+    .about-us-text{
+        background-image: url('/images/bg/about-us.svg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            height: 29.5rem;
+
+            h3{
+                color: $cta-color;
+                font-family: inherit;
+                font-size: 1.875rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            h1{
+                color: #4A2960;
+                font-family: inherit;
+                font-size: 3.125rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            p{
+                color: #4A2960;
+                font-family: Inter;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            button{
+                border: none;
+                outline: none;
+                background-color: $cta-color;
+                max-width: 8.5rem;
+                color: white;
+                font-family: inherit;
+                display: inline-flex;
+                padding: 0.875rem 1.75rem;
+                justify-content: center;
+                align-items: center;
+                gap: 0.625rem;
+                border-radius: 0.625rem;
+            }
+        }
+    }
+
+    .image-cards{
+        background-image: url('/images/bg/about-us.svg');
+        img{
+            display: block;
+        }
+        .col1{
+
+        }
+    }
+
+}
