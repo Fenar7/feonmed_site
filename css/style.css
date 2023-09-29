@@ -14,6 +14,21 @@ p {
   padding: 0 100px;
 }
 
+.header-main {
+  background: #FFF;
+  position: relative;
+  box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.12);
+}
+.header-main hr {
+  position: absolute;
+  width: 100vw;
+  background: #DEDEDE;
+  border: 0px;
+  height: 0.0625rem;
+  margin: 0;
+  left: 0;
+}
+
 .top-header {
   height: 6.3125em;
   background-color: white;
@@ -28,7 +43,6 @@ p {
 
 .bottom-header {
   height: 3.125em;
-  background-color: yellow;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -183,7 +197,10 @@ p {
 }
 
 .navbar ul {
+  margin: 0;
+  padding: 0;
   display: flex;
+  gap: 1.25rem;
   list-style-type: none;
 }
 .navbar li {
@@ -191,4 +208,46 @@ p {
 }
 .navbar li a {
   text-decoration: none;
+  color: #777777;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: all ease-out 0.2s;
+}
+.navbar li a:hover {
+  color: #FE5D14;
+}
+.navbar li .active {
+  color: #FE5D14;
+}
+
+.register-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.register-login svg {
+  transition: all ease-out 0.2s;
+}
+.register-login .text p {
+  color: #777777;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: all ease-out 0.2s;
+}
+
+.register-login:hover {
+  cursor: pointer;
+}
+.register-login:hover p {
+  color: #FE5D14;
+}
+.register-login:hover svg path {
+  stroke: #FE5D14;
 }/*# sourceMappingURL=style.css.map */
