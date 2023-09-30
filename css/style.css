@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-main {
   background: #FFF;
   position: relative;
@@ -347,6 +351,11 @@ footer .top-section .sign-up-btn .sign-box form button {
   gap: 0.625rem;
   background-color: #FE5D14;
   color: #fff;
+  transition: all ease-out 0.2s;
+}
+footer .top-section .sign-up-btn .sign-box form button:hover {
+  background-color: #c43e00;
+  cursor: pointer;
 }
 footer .bottom-section {
   display: grid;
@@ -375,6 +384,10 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
   font-style: normal;
   font-weight: 700;
   line-height: 2.1875rem; /* 218.75% */
+  transition: all ease-in-out 0.2s;
+}
+footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul li a:hover {
+  color: #FE5D14;
 }
 
 .hero-section {
@@ -441,6 +454,9 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.625rem;
+}
+.hero-section .hero-text .content button:hover {
+  background-color: #c43e00;
 }
 .hero-section .hero-img {
   background-image: url("/images/hero_img.svg");
@@ -528,6 +544,10 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: all ease-out 0.2s;
+}
+.categories-cards .card .content a:hover {
+  color: #4A2960;
 }
 
 .about-us-section {
@@ -535,9 +555,9 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
   grid-template-columns: 50% 50%;
   padding-bottom: 5rem;
   background-color: #fff;
+  background-image: url("/images/bg/about-us.svg");
 }
 .about-us-section .about-us-text {
-  background-image: url("/images/bg/about-us.svg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -585,9 +605,10 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.625rem;
+  transition: all ease-out 0.2s;
 }
-.about-us-section .image-cards {
-  background-image: url("/images/bg/about-us.svg");
+.about-us-section .about-us-text .content button:hover {
+  background-color: #c43e00;
 }
 .about-us-section .image-cards img {
   display: block;
@@ -707,6 +728,10 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.625rem;
+  transition: all ease-out 0.2s;
+}
+.highlighted-prodcuts .content button:hover {
+  background-color: #c43e00;
 }
 .highlighted-prodcuts .content .price {
   display: flex;
@@ -788,6 +813,7 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
   border-radius: 0.625rem;
   background: #FFDFD0;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  transition: all ease-in 0.2s;
 }
 .featured-products .products-row .product .image-card img {
   width: 8rem;
@@ -813,6 +839,9 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.featured-products .products-row .product:hover .image-card {
+  background-color: #f7b393;
 }
 
 .contact-us {
@@ -941,4 +970,18 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.625rem;
+  transition: all ease-out 0.2s;
+}
+.form-section button:hover {
+  background-color: #c43e00;
+  cursor: pointer;
+}
+
+button {
+  transition: all ease-out 0.2s;
+}
+
+button:hover {
+  background-color: #c43e00;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

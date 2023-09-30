@@ -73,6 +73,11 @@ footer{
                             gap: 0.625rem;
                             background-color: $cta-color;
                             color: #fff;
+                            transition: all ease-out 0.2s;
+                }
+                button:hover{
+                    background-color: $hover-orange;
+                    cursor: pointer;
                 }
             }
                     
@@ -107,6 +112,11 @@ footer{
                     font-style: normal;
                     font-weight: 700;
                     line-height: 2.1875rem; /* 218.75% */
+                    transition: all ease-in-out 0.2s;
+                }
+
+                a:hover{
+                    color: $cta-color;
                 }
             }
         }
