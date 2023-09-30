@@ -1,0 +1,61 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    .blog-content{
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2.1rem;
+            
+        .image{
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            height: 26rem;
+            width: 46rem;
+            border-radius: 0.625rem;
+            background: #F00;
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2.1rem;
+            padding-right: 3rem;
+
+            h3{
+                color: #4A2960;
+                font-family: inherit;
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            h6{
+                color: #777;
+                font-family: inherit;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.875rem; /* 150% */
+            }
+
+            p{
+                color: #4A2960;
+                font-family: inherit;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+    }
+
+    .blog-nav{
+        background-color: yellow;
+    }
+}
