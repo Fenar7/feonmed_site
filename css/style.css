@@ -175,6 +175,7 @@ a {
   border-radius: 0.625rem;
   border: 1px solid rgba(222, 222, 222, 0);
   background: rgba(254, 93, 20, 0.2);
+  transition: all ease-out 0.2s;
 }
 .cart .cart-icon {
   position: relative;
@@ -218,6 +219,10 @@ a {
   transform: rotate(90deg);
   flex-shrink: 0;
   z-index: 100;
+}
+
+.cart:hover {
+  background-color: #f7b393;
 }
 
 .navbar ul {

@@ -140,6 +140,7 @@
     border-radius: 0.625rem;
     border: 1px solid rgba(222, 222, 222, 0.00);
     background: rgba(254, 93, 20, 0.20);
+    transition: all ease-out 0.2s;
 
     .cart-icon{
         position: relative;
@@ -188,6 +189,10 @@
         flex-shrink: 0;
         z-index: 100;
     }
+}
+
+.cart:hover{
+    background-color: $card-orange-hover;
 }
 
 .navbar{

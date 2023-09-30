@@ -1,0 +1,50 @@
+.about-us-hero{
+    background-image: url('/images/bg/about-us.svg');
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    .text-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.1rem;
+        h3{
+            color: #FE5D14;
+            font-family: inherit;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        h1{
+            color: #4A2960;
+            font-family: inherit;
+            font-size: 5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        p{
+            color: #4A2960;
+            font-family: inherit;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .features-list{
+        .items{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    .exp-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-bottom: 5rem;
+    }
+}
