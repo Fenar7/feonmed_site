@@ -171,7 +171,7 @@
 .about-us-section{
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 50rem;
+    padding-bottom: 5rem;
     background-color: #fff;
     
     .about-us-text{
@@ -234,9 +234,6 @@
         background-image: url('/images/bg/about-us.svg');
         img{
             display: block;
-        }
-        .col1{
-
         }
     }
 
@@ -558,16 +555,31 @@
 
 //contact us form
 .form-section{
+    box-sizing: border-box;
     display: flex;
+    overflow: hidden;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 36.5rem;
     height: 38.4375rem;
     flex-shrink: 0;
     border-radius: 0.625rem;
+    gap: 2.625rem;
     background: #FFF;
+    padding: 2.8rem;
+
+    h2{
+        color: #000;
+        font-family: inherit;
+        font-size: 1.875rem;
+        width: 33rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
     form{
-        width: 30rem;
     }
 
     .input-row{
@@ -611,5 +623,22 @@
             height: 5.5rem;
         }
     }
+
+    button{
+        align-self: start;
+        border: none;
+                outline: none;
+                background-color: $cta-color;
+                max-width: 9.5rem;
+                color: white;
+                font-family: inherit;
+                display: inline-flex;
+                padding: 0.875rem 1.75rem;
+                justify-content: center;
+                align-items: center;
+                gap: 0.625rem;
+                border-radius: 0.625rem;
+    }
+
 }
     

@@ -533,7 +533,7 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
 .about-us-section {
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 50rem;
+  padding-bottom: 5rem;
   background-color: #fff;
 }
 .about-us-section .about-us-text {
@@ -592,6 +592,7 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
 .about-us-section .image-cards img {
   display: block;
 }
+
 .client-info {
   background-image: url("/images/bg/ourimpact.svg");
   background-color: #4A2960;
@@ -870,16 +871,28 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
 }
 
 .form-section {
+  box-sizing: border-box;
   display: flex;
+  overflow: hidden;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 36.5rem;
   height: 38.4375rem;
   flex-shrink: 0;
   border-radius: 0.625rem;
+  gap: 2.625rem;
   background: #FFF;
+  padding: 2.8rem;
 }
-.form-section form {
-  width: 30rem;
+.form-section h2 {
+  color: #000;
+  font-family: inherit;
+  font-size: 1.875rem;
+  width: 33rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .form-section .input-row {
   display: flex;
@@ -913,4 +926,19 @@ footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
 .form-section .message input {
   width: 30.7875rem;
   height: 5.5rem;
+}
+.form-section button {
+  align-self: start;
+  border: none;
+  outline: none;
+  background-color: #FE5D14;
+  max-width: 9.5rem;
+  color: white;
+  font-family: inherit;
+  display: inline-flex;
+  padding: 0.875rem 1.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
 }/*# sourceMappingURL=style.css.map */
