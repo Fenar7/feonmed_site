@@ -491,3 +491,125 @@
         }
     }
 }
+
+// start of contact us section
+
+.contact-us{
+    background-color: $cta-color;
+    background-image: url('/images/bg/contact\ us.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 52.25rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 3rem;
+        gap: 1.25rem;
+        h1{
+            color: #FFF;
+            font-family: inherit;
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        p{
+            color: #FFF;
+            font-family: Inter;
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .mail,.call{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #FFF;
+            font-family: inherit;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            svg{
+                path{
+                    stroke: white;
+                }
+            }
+        }
+    }
+}
+
+//contact us form
+.form-section{
+    display: flex;
+    justify-content: center;
+    width: 36.5rem;
+    height: 38.4375rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #FFF;
+
+    form{
+        width: 30rem;
+    }
+
+    .input-row{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .input-group{
+        display: flex;
+        flex-direction: column;
+
+        label{
+            color: #686868;
+            font-family: Inter;
+            font-size: 0.75rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 0.1rem;
+        }
+
+        input{
+            width: 14.625rem;
+            height: 2.1rem;
+            flex-shrink: 0;
+            border-radius: 0.625rem;
+            border: 1px solid #DEDEDE;
+        }
+    }
+
+    .email{
+        input{
+            width: 30.7875rem;
+        }
+    }
+
+    .message{
+        input{
+            width: 30.7875rem;
+            height: 5.5rem;
+        }
+    }
+}
+    

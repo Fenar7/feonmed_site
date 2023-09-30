@@ -272,6 +272,111 @@ h1, h2, h3, h4, h5, h6 {
   stroke: #FE5D14;
 }
 
+footer {
+  height: 37.5rem;
+  background-color: #4A2960;
+}
+footer hr {
+  width: 100%;
+  border-color: rgba(168, 168, 168, 0.5);
+}
+footer .top-section {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  height: 270px;
+}
+footer .top-section .content {
+  flex: 1;
+  color: #FFF;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+footer .top-section .sign-up-btn {
+  flex: 1;
+}
+footer .top-section .sign-up-btn h5 {
+  color: #FFF;
+  font-family: inherit;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+footer .top-section .sign-up-btn .sign-box {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 30rem;
+  border-bottom: 1px solid #777777;
+  display: inline-flex;
+  height: 3rem;
+  padding-left: 1rem;
+}
+footer .top-section .sign-up-btn .sign-box form {
+  display: flex;
+  width: 30rem;
+}
+footer .top-section .sign-up-btn .sign-box form .sign-text-box {
+  color: #686868;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+  height: 100%;
+  max-width: 50rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+footer .top-section .sign-up-btn .sign-box form button {
+  display: inline-block;
+  font: inherit;
+  border: none;
+  outline: none;
+  display: flex;
+  height: 3rem;
+  padding: 1rem 1.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: #FE5D14;
+  color: #fff;
+}
+footer .bottom-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer .bottom-section .pages, footer .bottom-section .social {
+  margin-top: 2.2rem;
+}
+footer .bottom-section .pages h3, footer .bottom-section .social h3 {
+  color: #FE5D14;
+  font-family: inherit;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+footer .bottom-section .pages ul, footer .bottom-section .social ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .bottom-section .pages ul li a, footer .bottom-section .social ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.1875rem; /* 218.75% */
+}
+
 .hero-section {
   display: grid;
   grid-template-columns: 50vw 50vw;
@@ -707,4 +812,105 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.contact-us {
+  background-color: #FE5D14;
+  background-image: url("/images/bg/contact us.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 52.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.contact-us .wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.contact-us .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3rem;
+  gap: 1.25rem;
+}
+.contact-us .content h1 {
+  color: #FFF;
+  font-family: inherit;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.contact-us .content p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.contact-us .content .mail, .contact-us .content .call {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #FFF;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.contact-us .content .mail svg path, .contact-us .content .call svg path {
+  stroke: white;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  width: 36.5rem;
+  height: 38.4375rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #FFF;
+}
+.form-section form {
+  width: 30rem;
+}
+.form-section .input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.form-section .input-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-section .input-group label {
+  color: #686868;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0.1rem;
+}
+.form-section .input-group input {
+  width: 14.625rem;
+  height: 2.1rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  border: 1px solid #DEDEDE;
+}
+.form-section .email input {
+  width: 30.7875rem;
+}
+.form-section .message input {
+  width: 30.7875rem;
+  height: 5.5rem;
 }/*# sourceMappingURL=style.css.map */
