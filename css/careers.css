@@ -64,6 +64,10 @@
   font-weight: 700;
   line-height: normal;
 }
+.hero .job-categories button.active {
+  color: white;
+  background-color: #4A2960;
+}
 
 .wrapper {
   margin-top: 4.6875rem;
@@ -134,4 +138,17 @@
 }
 .jobs-section .apply-btn {
   display: flex;
+  transition: all ease-in-out 0.2s;
+}
+.jobs-section .apply-btn svg {
+  transition: all ease-in-out 0.2s;
+}
+.jobs-section .apply-btn:hover {
+  color: #FE5D14;
+}
+.jobs-section .apply-btn:hover svg {
+  fill: #FE5D14;
+}
+.jobs-section .apply-btn:hover svg path {
+  stroke: #FE5D14;
 }/*# sourceMappingURL=careers.css.map */

@@ -71,6 +71,10 @@
             font-weight: 700;
             line-height: normal;
         }
+        button.active{
+            color: white;
+            background-color: $accent-color;
+        }
     }
 }
 
@@ -152,6 +156,20 @@
 
     .apply-btn{
         display: flex;
+        transition: all ease-in-out 0.2s;
+        svg{
+            transition: all ease-in-out 0.2s;
+        }
+    }
+
+    .apply-btn:hover{
+        color: $cta-color;
+        svg{
+            path{
+                stroke: $cta-color;
+            }
+            fill: $cta-color;
+        }
     }
 
 }
