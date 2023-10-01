@@ -63,6 +63,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: all ease-out 0.2s;
+}
+.hero .job-categories button:hover {
+  color: white;
+  background-color: #4A2960;
 }
 .hero .job-categories button.active {
   color: white;

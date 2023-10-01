@@ -70,7 +70,14 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            transition: all ease-out 0.2s;
         }
+
+        button:hover{
+            color: white;
+            background-color: $accent-color;
+        }
+
         button.active{
             color: white;
             background-color: $accent-color;
