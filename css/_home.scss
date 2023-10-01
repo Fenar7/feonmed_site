@@ -20,6 +20,11 @@
             width: 33.5rem;
             height: 27.0625rem;
             flex-shrink: 0;
+            @media only screen and (max-width: 1100px){
+                width: 20rem;
+                justify-content: center;
+            }
+            
 
             h3{
                 margin: 0;
@@ -29,6 +34,9 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+                @media only screen and (max-width: 1100px){
+                    font-size: 1.3rem;
+                }
             }
 
             h1{
@@ -40,6 +48,9 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+                @media only screen and (max-width: 1100px){
+                    font-size: 2rem;
+                }
             }
 
             h5{
@@ -50,6 +61,9 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+                @media only screen and (max-width: 1100px){
+                    font-size: 1.2rem;
+                }
             }
 
             button{
@@ -120,6 +134,11 @@
         width: 15.625rem;
         height: 15.625rem;
         border-radius: 0.625rem;
+        overflow: hidden;
+        @media only screen and (max-width: 1100px){
+            width: 10rem;
+            width: 10rem;
+        }
         img{
             border-radius: 0.625rem 0.625rem 0 0;
         }
@@ -670,4 +689,8 @@
         cursor: pointer;
     }
 
+}
+
+@media only screen and (max-width: 1100px){
+    
 }
