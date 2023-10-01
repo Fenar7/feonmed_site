@@ -131,4 +131,7 @@
 }
 .jobs-section .text .btn-info .btn-2 {
   width: 6rem;
+}
+.jobs-section .apply-btn {
+  display: flex;
 }/*# sourceMappingURL=careers.css.map */
