@@ -395,7 +395,40 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
   color: #FE5D14;
 }
 
+.btn-prev {
+  position: absolute;
+  background: none;
+  top: 50%;
+  left: 2rem;
+  cursor: pointer;
+  transition: all ease-out 0.2s;
+}
+
+.btn-next {
+  position: absolute;
+  background: none;
+  top: 50%;
+  right: 2rem;
+  cursor: pointer;
+  transition: all ease-out 0.2s;
+}
+
+.btn-prev:hover circle {
+  fill: #FE5D14;
+}
+.btn-prev:hover path {
+  stroke: white;
+}
+
+.btn-next:hover circle {
+  fill: #FE5D14;
+}
+.btn-next:hover path {
+  stroke: white;
+}
+
 .hero-section {
+  position: relative;
   display: grid;
   grid-template-columns: 50vw 50vw;
   height: 42rem;
