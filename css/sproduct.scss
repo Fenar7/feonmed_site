@@ -7,6 +7,47 @@
 .main-section{
     display: grid;
     grid-template-columns: 50% 50%;
+    align-items: center;
+    overflow: hidden;
+
+    .single-pro-image{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 31.3125rem;
+        margin-right: 3rem;
+        flex-shrink: 0;
+        border-radius: 0.625rem;
+        background: #FFF;
+        box-shadow: 4px 6px 9px -1px rgba(0, 0, 0, 0.25);
+    }
+
+    .small-img-group{
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .small-img-col{
+            cursor: pointer;
+            display: flex;
+            overflow: hidden;
+            width: 4.3125rem;
+            height: 4.3125rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.625rem;
+            border: 2px solid #FE5D14;
+            background: #FFF;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
 
     .product-info{
         display: flex;
@@ -173,6 +214,70 @@
         border-radius: 0.625rem;
         background: #FFF;
         box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+
+        h3{
+            color: $accent-color;
+            font-family: Inter;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .horizontal-line{
+            border: none;
+            background-color: #DEDEDE;
+            height: 1px;
+            box-shadow: none;
+        }
+
+        .products-column{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            .product{
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                gap: 2rem;
+                width: 19.5rem;
+                height: 9.125rem;
+                overflow: hidden;
+                flex-shrink: 0;
+                border-bottom: 1px solid #DEDEDE;
+            }
+
+            .image{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 4.9375rem;
+                    height: 5.9375rem;
+                    flex-shrink: 0;
+                }
+            }
+
+            .text{
+                h3{
+                    color: #4A2960;
+                    font-family: inherit;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                h2{
+                    color: #FE5D14;
+                    font-family: inherit;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
     }
 
     .desc-row{
