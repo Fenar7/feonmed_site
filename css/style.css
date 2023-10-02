@@ -300,6 +300,13 @@ footer {
   height: 37.5rem;
   background-color: #4A2960;
 }
+@media only screen and (max-width: 800px) {
+  footer {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+  }
+}
 footer hr {
   width: 100%;
   border-color: rgba(168, 168, 168, 0.5);
@@ -311,6 +318,14 @@ footer .top-section {
   justify-content: center;
   height: 270px;
 }
+@media only screen and (max-width: 800px) {
+  footer .top-section {
+    padding: 0 2rem;
+    gap: 5rem;
+    flex-direction: column;
+    height: unset;
+  }
+}
 footer .top-section .content {
   flex: 1;
   color: #FFF;
@@ -320,8 +335,29 @@ footer .top-section .content {
   font-weight: 600;
   line-height: normal;
 }
+@media only screen and (max-width: 800px) {
+  footer .top-section .content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    height: unset;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+}
 footer .top-section .sign-up-btn {
   flex: 1;
+}
+@media only screen and (max-width: 800px) {
+  footer .top-section .sign-up-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
 }
 footer .top-section .sign-up-btn h5 {
   color: #FFF;
@@ -331,6 +367,12 @@ footer .top-section .sign-up-btn h5 {
   font-weight: 700;
   line-height: normal;
 }
+@media only screen and (max-width: 800px) {
+  footer .top-section .sign-up-btn h5 {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
 footer .top-section .sign-up-btn .sign-box {
   margin-top: 2rem;
   width: 100%;
@@ -339,6 +381,12 @@ footer .top-section .sign-up-btn .sign-box {
   display: inline-flex;
   height: 3rem;
   padding-left: 1rem;
+}
+@media only screen and (max-width: 800px) {
+  footer .top-section .sign-up-btn .sign-box {
+    max-width: 20rem;
+    margin-bottom: 2rem;
+  }
 }
 footer .top-section .sign-up-btn .sign-box form {
   display: flex;
@@ -381,6 +429,13 @@ footer .bottom-section {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media only screen and (max-width: 800px) {
+  footer .bottom-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 footer .bottom-section .pages, footer .bottom-section .social {
   margin-top: 2.2rem;
 }
@@ -410,11 +465,6 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
   color: #FE5D14;
 }
 
-@media only screen and (max-width: 800px) {
-  footer {
-    display: none;
-  }
-}
 .btn-prev {
   position: absolute;
   background: none;

@@ -11,6 +11,12 @@
   height: 36.5rem;
   flex-shrink: 0;
 }
+@media only screen and (max-width: 1100px) {
+  .hero {
+    height: 50rem;
+    background-size: 35rem;
+  }
+}
 .hero .hero-text button {
   display: flex;
   padding: 0.875rem 1.75rem;
@@ -27,6 +33,12 @@
   font-weight: 700;
   line-height: normal;
 }
+@media only screen and (max-width: 1100px) {
+  .hero .hero-text button {
+    margin-top: 5rem;
+    font-size: 1rem;
+  }
+}
 .hero .hero-text h1 {
   color: #4A2960;
   font-family: inherit;
@@ -34,6 +46,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media only screen and (max-width: 800px) {
+  .hero .hero-text h1 {
+    font-size: 4rem;
+  }
 }
 .hero .hero-text p {
   color: #4A2960;
@@ -43,8 +60,14 @@
   font-weight: 500;
   line-height: 2.5rem; /* 160% */
 }
+@media only screen and (max-width: 800px) {
+  .hero .hero-text p {
+    font-size: 1.1rem;
+  }
+}
 .hero .job-categories {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 .hero .job-categories button {
@@ -95,6 +118,11 @@
   font-weight: 700;
   line-height: normal;
 }
+@media only screen and (max-width: 800px) {
+  .jobs-section .text h1 {
+    font-size: 1.5rem;
+  }
+}
 .jobs-section .text h3 {
   color: #4A2960;
   font-family: inherit;
@@ -102,6 +130,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: 2.5rem; /* 160% */
+}
+@media only screen and (max-width: 800px) {
+  .jobs-section .text h3 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
 }
 .jobs-section .text ul li {
   list-style-type: number;
@@ -111,6 +145,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.5625rem; /* 156.25% */
+}
+@media only screen and (max-width: 800px) {
+  .jobs-section .text ul li {
+    font-size: 0.9rem;
+  }
 }
 .jobs-section .text .btn-info {
   display: flex;
@@ -137,6 +176,11 @@
   border-radius: 1.875rem;
   border: 3px solid #4A2960;
   background: rgba(254, 93, 20, 0);
+}
+@media only screen and (max-width: 800px) {
+  .jobs-section .text .btn-info .btn-exp {
+    width: 7rem;
+  }
 }
 .jobs-section .text .btn-info .btn-2 {
   width: 6rem;

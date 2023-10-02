@@ -8,6 +8,12 @@
   align-items: center;
   overflow: hidden;
 }
+@media only screen and (max-width: 800px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .main-section .single-pro-image {
   position: relative;
   display: flex;
@@ -20,6 +26,17 @@
   border-radius: 0.625rem;
   background: #FFF;
   box-shadow: 4px 6px 9px -1px rgba(0, 0, 0, 0.25);
+}
+@media only screen and (max-width: 800px) {
+  .main-section .single-pro-image {
+    margin: 0 auto;
+    margin-top: 2rem;
+    height: 20rem;
+    width: 20rem;
+  }
+  .main-section .single-pro-image img {
+    width: 10rem;
+  }
 }
 .main-section .small-img-group {
   position: absolute;
@@ -194,12 +211,25 @@
   grid-template-columns: 30% 70%;
   gap: 2.5rem;
 }
+@media only screen and (max-width: 800px) {
+  .bottom-section {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
 .bottom-section .top-selling-products {
   height: 46.6875rem;
   flex-shrink: 0;
   border-radius: 0.625rem;
   background: #FFF;
   box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+}
+@media only screen and (max-width: 800px) {
+  .bottom-section .top-selling-products {
+    width: 20rem;
+  }
 }
 .bottom-section .top-selling-products h3 {
   color: #4A2960;
@@ -297,6 +327,15 @@
   border-radius: 0.625rem;
   background: #FFF;
   box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+@media only screen and (max-width: 800px) {
+  .bottom-section .desc-row .related-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+  }
 }
 .bottom-section .desc-row .related-products h3 {
   color: #4A2960;
@@ -310,6 +349,12 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  .bottom-section .desc-row .related-products .products-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 .bottom-section .desc-row .related-products .products-row .product {
   position: relative;

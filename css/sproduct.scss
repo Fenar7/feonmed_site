@@ -9,6 +9,10 @@
     grid-template-columns: 50% 50%;
     align-items: center;
     overflow: hidden;
+    @media only screen and (max-width: 800px){
+        display: flex;
+        flex-direction: column;
+    }
 
     .single-pro-image{
         position: relative;
@@ -22,6 +26,16 @@
         border-radius: 0.625rem;
         background: #FFF;
         box-shadow: 4px 6px 9px -1px rgba(0, 0, 0, 0.25);
+        
+        @media only screen and (max-width: 800px){
+            margin: 0 auto;
+            margin-top: 2rem;
+            height: 20rem;
+            width: 20rem;
+            img{
+                width: 10rem;
+            }
+        }
     }
 
     .small-img-group{
@@ -207,6 +221,12 @@
     display: grid;
     grid-template-columns: 30% 70%;
     gap: 2.5rem;
+    @media only screen and (max-width: 800px){
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 
     .top-selling-products{
         height: 46.6875rem;
@@ -214,6 +234,9 @@
         border-radius: 0.625rem;
         background: #FFF;
         box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+        @media only screen and (max-width: 800px){
+            width: 20rem;
+        }
 
         h3{
             color: $accent-color;
@@ -246,6 +269,7 @@
                 overflow: hidden;
                 flex-shrink: 0;
                 border-bottom: 1px solid #DEDEDE;
+                
             }
 
             .image{
@@ -322,6 +346,13 @@
             border-radius: 0.625rem;
             background: #FFF;
             box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            @media only screen and (max-width: 800px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: unset;
+            }
 
             h3{
                 color: $accent-color;
@@ -336,6 +367,10 @@
                 display: flex;
                 justify-content: space-between;
                 margin-top: 2rem;
+                @media only screen and (max-width: 800px){
+                    flex-direction: column;
+                    gap: 2rem;
+                }
                 .product{
                     position: relative;
                     display: grid;
