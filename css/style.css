@@ -305,6 +305,12 @@ a {
   .contact {
     display: none;
   }
+  .mobile-icons {
+    display: none;
+  }
+  .open-nav {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .contact {
@@ -340,6 +346,63 @@ a {
   }
   .header-main .bottom-header {
     display: none;
+  }
+  .mobile-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .open-nav {
+    position: fixed;
+    right: -500px;
+    z-index: 10;
+    height: 100%;
+    width: 50vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .open-nav .register-login {
+    position: fixed;
+    right: -500px;
+    transition: right 0.3s ease-in-out;
+  }
+  .open-nav ul {
+    margin-left: -5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style-type: none;
+  }
+  .open-nav ul a {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4A2960;
+  }
+  .open-nav .close {
+    position: fixed;
+    top: 0rem;
+    right: -500px;
+    margin: 2em;
+    width: 2em;
+    transition: right 0.3s ease-in-out;
+  }
+  .display-allow {
+    position: fixed;
+    right: 0px;
+  }
+  .display-allow .close {
+    position: fixed;
+    right: 0rem;
+  }
+  .display-allow .register-login {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
   }
 }
 footer {
@@ -709,6 +772,12 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
   display: flex;
   justify-content: space-between;
   margin-top: 3.2rem;
+}
+@media only screen and (max-width: 1100px) {
+  .categories-cards {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
 @media only screen and (max-width: 800px) {
   .categories-cards {

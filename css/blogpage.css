@@ -35,8 +35,6 @@
 }
 @media only screen and (max-width: 800px) {
   .wrapper .blog-content .image {
-    display: flex;
-    align-items: center;
     width: 28rem;
     height: 15rem;
   }
@@ -86,6 +84,11 @@
   .wrapper .blog-content .text p {
     font-size: 0.9rem;
     margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .wrapper .blog-content {
+    margin: 0 auto;
   }
 }
 .wrapper .blog-nav {
