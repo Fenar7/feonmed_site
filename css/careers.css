@@ -110,6 +110,12 @@
   border-top: 1px solid #DEDEDE;
   border-bottom: 1px solid #DEDEDE;
 }
+@media only screen and (max-width: 800px) {
+  .jobs-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 .jobs-section .text h1 {
   color: #4A2960;
   font-family: inherit;

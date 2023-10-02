@@ -19,6 +19,11 @@
     max-width: 40rem;
   }
 }
+@media only screen and (max-width: 800px) {
+  .wrapper .blog-content {
+    align-items: center;
+  }
+}
 .wrapper .blog-content .image {
   display: flex;
   overflow: hidden;
@@ -35,8 +40,9 @@
 }
 @media only screen and (max-width: 800px) {
   .wrapper .blog-content .image {
-    width: 28rem;
+    width: 20rem;
     height: 15rem;
+    justify-content: center;
   }
 }
 .wrapper .blog-content .text {
@@ -45,6 +51,11 @@
   align-items: flex-start;
   gap: 2.1rem;
   padding-right: 3rem;
+}
+@media only screen and (max-width: 800px) {
+  .wrapper .blog-content .text {
+    max-width: 20rem;
+  }
 }
 .wrapper .blog-content .text h3 {
   color: #4A2960;
