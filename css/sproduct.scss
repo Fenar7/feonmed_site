@@ -314,6 +314,10 @@
             border-radius: 0.625rem;
             background: #FFF;
             box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+            @media only screen and (max-width: 800px){
+                height: unset;
+            }
+
             h3{
                 color: $accent-color;
                 font-family: Inter;
