@@ -330,6 +330,10 @@ a {
 }
 @media only screen and (max-width: 800px) {
   .contact {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
     padding: 0.5rem 0;
   }
   .contact h1 {
