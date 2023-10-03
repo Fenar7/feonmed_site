@@ -48,10 +48,9 @@
             height: unset;
             width: 100%;
     }
-    
 
     .hero-text{
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         background-color: $accent-color;
@@ -140,6 +139,7 @@
         }
     }
     .hero-img{
+        display: none;
         background-image: url('/images/hero_img.svg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -150,7 +150,19 @@
             }
         }
     }
+
+    .hero-text.active{
+        display: flex;
+    }
+
+    .hero-img.active{
+        display: block;
+    }
+    
+
 }
+
+    
 
 // categories section
 .categories{    
@@ -205,7 +217,7 @@
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       gap: 1rem;
+       gap: 3rem;
     }
     .card{
         width: 15.625rem;
@@ -218,7 +230,7 @@
         }
 
         @media only screen and (max-width: 800px){
-            width: 15rem;
+            width: 18rem;
             height: 15rem;
         }
 
@@ -729,9 +741,7 @@
             font-weight: 700;
             line-height: normal;
             @media only screen and (max-width: 800px){
-                h1{
-                    font-size: 2rem;
-                }
+                    font-size: 3rem;
             }
         }
 
@@ -746,8 +756,8 @@
                 text-align: center;
             }
             @media only screen and (max-width: 800px){
-                    font-size: 0.9rem;
-                    width: 18rem;
+                    font-size: 0.7rem;
+                    width: 20rem;
             }
         }
 
@@ -762,8 +772,14 @@
             font-weight: 500;
             line-height: normal;
 
+            @media only screen and (max-width: 800px){
+                font-size: 1rem;
+        }
+
             svg{
+                width: 1.5rem;
                 path{
+                    
                     stroke: white;
                 }
             }
@@ -787,7 +803,7 @@
     background: #FFF;
     padding: 2.8rem;
     @media only screen and (max-width: 800px){
-        width: 25rem;
+        width: 22rem;
         padding: 1rem;
         height: unset;
     }
@@ -803,7 +819,7 @@
         @media only screen and (max-width: 800px){
             width: 20rem;
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             display: flex;
             justify-content: center;
         }
@@ -842,7 +858,7 @@
             border-radius: 0.625rem;
             border: 1px solid #DEDEDE;
             @media only screen and (max-width: 800px){
-                width: 10rem;
+                width: 8rem;
             }
         }
     }
@@ -851,13 +867,9 @@
         input{
             width: 30.7875rem;
             @media only screen and (max-width: 800px){
-                width: 25rem;
-                height: 2rem;
-            }
-            @media only screen and (max-width: 800px){
-                width: 15rem;
+                width: 15.5rem;
                 padding: 1rem;
-                height: unset;
+                height: 0.5rem;
             }
         }
     }
@@ -867,7 +879,7 @@
             width: 30.7875rem;
             height: 5.5rem;
             @media only screen and (max-width: 800px){
-                width: 15rem;
+                width: 17rem;
                 height: 7rem;
             }
         }
