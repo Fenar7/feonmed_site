@@ -585,6 +585,7 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
   left: 2rem;
   cursor: pointer;
   transition: all ease-out 0.2s;
+  z-index: 40;
 }
 
 .btn-next {
@@ -594,6 +595,7 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
   right: 2rem;
   cursor: pointer;
   transition: all ease-out 0.2s;
+  z-index: 40;
 }
 
 .btn-prev:hover circle {
@@ -612,27 +614,47 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
 
 .hero-section {
   position: relative;
+}
+.hero-section .slider-container {
+  transition: opacity 0.5s ease-in-out;
+}
+.hero-section .slider-container .slide {
+  position: absolute;
   display: grid;
   grid-template-columns: 50vw 50vw;
   height: 42rem;
   background-color: #4A2960;
+  transition: transform 0.5s ease;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 @media only screen and (max-width: 800px) {
-  .hero-section {
+  .hero-section .slider-container .slide {
     display: flex;
     flex-direction: column;
-    height: unset;
+    height: 30rem;
     width: 100%;
+    background-image: url("/images/bg/violet-icon-bg.svg");
   }
 }
+.hero-section .slider-container .slide.active {
+  position: relative;
+  opacity: 1;
+}
 .hero-section .hero-text {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #4A2960;
   background-image: url("/images/bg/violet-icon-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 800px) {
+  .hero-section .hero-text {
+    background-image: none;
+    background-color: transparent;
+  }
 }
 .hero-section .hero-text .content {
   display: flex;
@@ -720,7 +742,6 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
   background-color: #c43e00;
 }
 .hero-section .hero-img {
-  display: none;
   background-image: url("/images/hero_img.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -730,12 +751,6 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
   .hero-section .hero-img .hero-img {
     display: none;
   }
-}
-.hero-section .hero-text.active {
-  display: flex;
-}
-.hero-section .hero-img.active {
-  display: block;
 }
 
 @media only screen and (max-width: 1100px) {

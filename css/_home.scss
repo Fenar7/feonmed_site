@@ -5,6 +5,7 @@
     left: 2rem;
     cursor: pointer;
     transition: all ease-out 0.2s;
+    z-index: 40;
 }
 .btn-next{
     position: absolute;
@@ -13,6 +14,7 @@
     right: 2rem;
     cursor: pointer;
     transition: all ease-out 0.2s;
+    z-index: 40;
 }
 .btn-prev:hover{
     circle{
@@ -38,25 +40,44 @@
 
 .hero-section{
     position: relative;
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    height: 42rem;
-    background-color: $accent-color;
-    @media only screen and (max-width: 800px){
-            display: flex;
-            flex-direction: column;
-            height: unset;
-            width: 100%;
+    .slider-container{
+        transition: opacity 0.5s ease-in-out;
+        .slide{
+            position: absolute;
+            display: grid;
+            grid-template-columns: 50vw 50vw;
+            height: 42rem;
+            background-color: $accent-color;
+            transition: transform 0.5s ease;
+            @media only screen and (max-width: 800px){
+                    display: flex;
+                    flex-direction: column;
+                    height: 30rem;
+                    width: 100%;
+                    background-image: url('/images/bg/violet-icon-bg.svg');
+                    
+            }
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+        .slide.active{
+            position: relative;
+            opacity: 1;
+        }
     }
 
     .hero-text{
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         background-color: $accent-color;
         background-image: url('/images/bg/violet-icon-bg.svg');
         background-repeat: no-repeat;
         background-size: cover;
+        @media only screen and (max-width: 800px){
+            background-image: none;
+            background-color: transparent;
+        }
         .content{
             display: flex;
             flex-direction: column;
@@ -139,7 +160,6 @@
         }
     }
     .hero-img{
-        display: none;
         background-image: url('/images/hero_img.svg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -151,13 +171,7 @@
         }
     }
 
-    .hero-text.active{
-        display: flex;
-    }
-
-    .hero-img.active{
-        display: block;
-    }
+    
     
 
 }
