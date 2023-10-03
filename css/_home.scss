@@ -52,6 +52,7 @@
             @media only screen and (max-width: 800px){
                     display: flex;
                     flex-direction: column;
+                    justify-content: center;
                     height: 30rem;
                     width: 100%;
                     background-image: url('/images/bg/violet-icon-bg.svg');
@@ -80,6 +81,7 @@
         }
         .content{
             display: flex;
+            justify-content: center;
             flex-direction: column;
             gap: 2.5rem;
             width: 33.5rem;
@@ -365,6 +367,10 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+                @media only screen and (max-width: 800px){
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
             }
 
             button{
@@ -923,6 +929,40 @@
 
 }
 
-@media only screen and (max-width: 1100px){
+// search icon css section
+
+.search-box-container{
+    input{
+        display: none;
+    }
+    top: -500px;
+    transition: top 0.3s ease;
+}
+
+.search-box-container.active{
+    input{
+        display: block;
+    }
+    position: fixed;
+    top: 101px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 80;
+    height: 100%;
+    width: 100vw;
+    background-color: white;
     
+    .search-field{
+        width: 85vw;
+        height: 3rem;
+        border: none;
+        border-bottom: 1px solid $light-grey;
+        transition: border ease-out 0.2s;
+    }
+    .search-field:focus{
+        border-bottom: 1px solid $cta-color;
+        outline: none;
+
+    }
 }

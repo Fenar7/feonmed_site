@@ -52,6 +52,7 @@ a {
   background: #FFF;
   position: relative;
   box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.12);
+  z-index: 100;
 }
 .header-main hr {
   position: absolute;
@@ -358,7 +359,7 @@ a {
   .open-nav {
     position: fixed;
     right: -500px;
-    z-index: 10;
+    z-index: 120;
     height: 100%;
     width: 50vw;
     background-color: white;
@@ -632,6 +633,7 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
   .hero-section .slider-container .slide {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 30rem;
     width: 100%;
     background-image: url("/images/bg/violet-icon-bg.svg");
@@ -658,6 +660,7 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
 }
 .hero-section .hero-text .content {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 2.5rem;
   width: 33.5rem;
@@ -940,6 +943,12 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media only screen and (max-width: 800px) {
+  .about-us-section .about-us-text .content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
 }
 .about-us-section .about-us-text .content button {
   border: none;
@@ -1471,6 +1480,40 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
 .form-section button:hover {
   background-color: #c43e00;
   cursor: pointer;
+}
+
+.search-box-container {
+  top: -500px;
+  transition: top 0.3s ease;
+}
+.search-box-container input {
+  display: none;
+}
+
+.search-box-container.active {
+  position: fixed;
+  top: 101px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 80;
+  height: 100%;
+  width: 100vw;
+  background-color: white;
+}
+.search-box-container.active input {
+  display: block;
+}
+.search-box-container.active .search-field {
+  width: 85vw;
+  height: 3rem;
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
+  transition: border ease-out 0.2s;
+}
+.search-box-container.active .search-field:focus {
+  border-bottom: 1px solid #FE5D14;
+  outline: none;
 }
 
 button {
