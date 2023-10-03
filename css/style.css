@@ -839,6 +839,11 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
 .categories-cards .card img {
   border-radius: 0.625rem 0.625rem 0 0;
 }
+@media only screen and (max-width: 800px) {
+  .categories-cards .card img {
+    width: 100%;
+  }
+}
 .categories-cards .card .content {
   display: flex;
   flex-direction: column;
