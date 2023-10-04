@@ -621,22 +621,18 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
 
 .hero-section {
   position: relative;
+  display: flex;
+  overflow: hidden;
 }
-.hero-section .slider-container {
-  transition: opacity 0.5s ease-in-out;
-}
-.hero-section .slider-container .slide {
-  position: absolute;
+.hero-section .slide {
   display: grid;
   grid-template-columns: 50vw 50vw;
   height: 42rem;
   background-color: #4A2960;
   transition: transform 0.5s ease;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
 }
 @media only screen and (max-width: 800px) {
-  .hero-section .slider-container .slide {
+  .hero-section .slide {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -644,10 +640,6 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
     width: 100%;
     background-image: url("/images/bg/violet-icon-bg.svg");
   }
-}
-.hero-section .slider-container .slide.active {
-  position: relative;
-  opacity: 1;
 }
 .hero-section .hero-text {
   display: flex;
