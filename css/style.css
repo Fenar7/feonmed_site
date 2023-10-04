@@ -633,11 +633,10 @@ footer .bottom-section .pages ul li a:hover, footer .bottom-section .social ul l
 }
 @media only screen and (max-width: 800px) {
   .hero-section .slide {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 100vw 0vw;
+    padding-top: 1rem;
     justify-content: center;
     height: 30rem;
-    width: 100%;
     background-image: url("/images/bg/violet-icon-bg.svg");
   }
 }
