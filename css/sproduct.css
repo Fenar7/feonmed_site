@@ -294,6 +294,7 @@
 }
 .bottom-section .desc-row .description {
   height: 23.3125rem;
+  overflow: auto;
   flex-shrink: 0;
   border-radius: 0.625rem;
   background: #FFF;
