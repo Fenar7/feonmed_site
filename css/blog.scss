@@ -28,6 +28,13 @@
 
         .image{
             overflow: hidden;
+            img{
+                max-width: 100%; 
+                max-height: 100%; 
+                object-fit: cover; 
+                width: 100%; 
+                height: 100%;
+            }
         }
 
         .content{
@@ -53,14 +60,19 @@
                 font-weight: 500;
                 line-height: 1.875rem; /* 250% */
             }
-            p{
-                color: #4A2960;
-                font-family: inherit;
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
+            .para{
+                overflow: auto;
+                max-height: 13rem;
+                p{
+                    color: #4A2960;
+                    font-family: inherit;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
             }
+
             button{
                 display: flex;
                 width: 8.125rem;
@@ -91,3 +103,19 @@
         }
     }
 }
+  .blog-card{
+    .content{
+            ::-webkit-scrollbar {
+                width: 4px; /* Adjust the width of the scrollbar */
+              }
+              
+              ::-webkit-scrollbar-track {
+                background: white; /* Change the color of the track */
+              }
+              
+              ::-webkit-scrollbar-thumb {
+                background: $card-orange-hover;
+                border-radius: 10rem;
+              }
+    }
+  }
