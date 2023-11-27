@@ -1,0 +1,38 @@
+@import "variables";
+
+.small-img-group{
+    max-height: 100%;
+    overflow: auto;
+    padding-right: 5px;
+    
+    .small-img-col{
+        flex-shrink: 0;
+    }
+}
+
+.main-section{
+    ::-webkit-scrollbar {
+        width: 4px; /* Adjust the width of the scrollbar */
+    }
+      
+    ::-webkit-scrollbar-track {
+        background: white; /* Change the color of the track */
+    }
+      
+    ::-webkit-scrollbar-thumb {
+        background: $card-orange-hover;
+        border-radius: 10rem;
+    }
+}
+
+.bottom-section{
+    .desc-row{
+        .related-products{
+            height: unset;
+            .products-row{
+                flex-wrap: wrap;
+                row-gap: 1.3em;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.small-img-group {
+  max-height: 100%;
+  overflow: auto;
+  padding-right: 5px;
+}
+.small-img-group .small-img-col {
+  flex-shrink: 0;
+}
+
+.main-section ::-webkit-scrollbar {
+  width: 4px; /* Adjust the width of the scrollbar */
+}
+.main-section ::-webkit-scrollbar-track {
+  background: white; /* Change the color of the track */
+}
+.main-section ::-webkit-scrollbar-thumb {
+  background: #f7b393;
+  border-radius: 10rem;
+}
+
+.bottom-section .desc-row .related-products {
+  height: unset;
+}
+.bottom-section .desc-row .related-products .products-row {
+  flex-wrap: wrap;
+  row-gap: 1.3em;
+}/*# sourceMappingURL=latest_changes.css.map */
